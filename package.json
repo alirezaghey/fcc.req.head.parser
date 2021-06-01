@@ -4,7 +4,8 @@
   "description": "parses request headers and returns them in the form of json",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js && /opt/google/chrome/chrome http://localhost:2000",
+    "start": "nodemon index.js && /opt/google/chrome/chrome http://localhost:3000",
+    "production": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
