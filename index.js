@@ -1,6 +1,7 @@
 const express = require("express");
 const dns = require("dns");
 const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
 app.use(cors());
@@ -18,4 +19,4 @@ app.get("/api/whoami", (req, res) => {
   });
 });
 
-app.listen(2000);
+app.listen(process.env.PORT || 80);
